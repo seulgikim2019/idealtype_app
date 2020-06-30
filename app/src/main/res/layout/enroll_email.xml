@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmailEnrollActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:textSize="150px"
+        android:paddingBottom="25px"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+    <EditText
+        android:layout_margin="10px"
+        android:lineSpacingExtra="14.5px"
+        android:id="@+id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint= "이메일"
+        android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/btnCheck"
+            android:text="중복확인"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>ㅣ
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idCheckTell"
+        android:text=""
+        android:visibility="gone"
+        android:textColor="@color/colorAccent"/>
+
+
+    <EditText
+        android:layout_margin="10px"
+        android:lineSpacingExtra="40px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="비밀번호"
+        android:id="@+id/etPassword" />
+
+    <EditText
+        android:layout_margin="10px"
+        android:lineSpacingExtra="40px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="비밀번호 확인"
+        android:id="@+id/etPasswordConfirm" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/psCheckTell"
+        android:text=""
+        android:textColor="@color/colorAccent"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        >
+
+
+        <Button
+            android:layout_margin="10px"
+            android:id="@+id/btnCancel"
+            android:text="취소"
+            android:minWidth="300px"
+            android:minHeight="150px"
+            android:layout_weight="1"
+            android:textSize="50px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_margin="10px"
+            android:id="@+id/btnDone"
+            android:text="가입"
+            android:textSize="50px"
+            android:minHeight="150px"
+            android:minWidth="300px"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

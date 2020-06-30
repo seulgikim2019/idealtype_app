@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="닉네임"/>
+    <EditText
+        android:layout_width="253dp"
+        android:layout_height="55dp"
+        android:layout_margin="10px"
+        android:background="@drawable/edit_border"
+        android:ems="10"
+        android:lineSpacingExtra="14.5px"
+        android:id="@+id/c_nickname"
+        android:padding="20px"
+        android:hint="  닉네임"
+        android:text="">
+
+        <requestFocus />
+    </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="나이" />
+
+        <EditText
+            android:inputType="number"
+            android:layout_width="253dp"
+            android:layout_height="55dp"
+            android:layout_margin="10px"
+            android:background="@drawable/edit_border"
+            android:ems="10"
+            android:lineSpacingExtra="14.5px"
+            android:id="@+id/c_age"
+            android:hint="  나이"
+            android:padding="20px"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10px"
+        android:layout_width="253dp"
+        android:layout_height="55dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="성별" />
+
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_border"
+                android:ems="10"
+                android:lineSpacingExtra="14.5px"
+                android:gravity="center"
+                android:id="@+id/c_gender"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/c_gender_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="5"
+                    android:text="남자"
+                    />
+
+                <RadioButton
+                    android:id="@+id/c_gender_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="5"
+                    android:text="여자"
+                    />
+
+            </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="지역" />
+
+        <Spinner
+            android:id="@+id/c_region"
+            android:layout_width="254dp"
+            android:layout_height="55dp"
+            android:layout_margin="10px"
+            android:ems="10"
+            android:entries="@array/city"
+            android:lineSpacingExtra="14.5px"
+            android:background="@drawable/spinner_border"
+            android:spinnerMode="dialog"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="직업" />
+
+        <Spinner
+            android:id="@+id/c_job"
+            android:layout_width="254dp"
+            android:layout_height="55dp"
+            android:layout_margin="10px"
+            android:ems="10"
+            android:entries="@array/job"
+            android:lineSpacingExtra="14.5px"
+            android:background="@drawable/spinner_border"
+            android:spinnerMode="dialog"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="키" />
+
+        <EditText
+            android:inputType="number"
+            android:layout_width="253dp"
+            android:layout_height="55dp"
+            android:layout_margin="10px"
+            android:background="@drawable/edit_border"
+            android:ems="10"
+            android:lineSpacingExtra="14.5px"
+            android:id="@+id/c_height"
+            android:hint="  키(cm)"
+            android:padding="20px"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10px"
+        android:layout_width="253dp"
+        android:layout_height="55dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="흡연" />
+
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_border"
+            android:ems="10"
+            android:lineSpacingExtra="14.5px"
+            android:gravity="center"
+            android:id="@+id/c_smoke"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/c_smoke_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:text="유"
+                />
+
+            <RadioButton
+                android:id="@+id/c_smoke_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:text="무"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="#FFFFFF"
+        android:id="@+id/personal_next"
+        android:text="다음단계"/>
+
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 자신의 사진 프로필을 설정할 때 나오는 창..-->
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyProfileReActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+<LinearLayout
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/my_pic_re"
+                android:layout_width="800px"
+                android:layout_height="800px"
+                android:src="@drawable/profile" />
+
+            <Button
+                android:id="@+id/my_upload_re"
+                android:layout_width="800px"
+                android:layout_height="wrap_content"
+                android:background="#FFDA70D6"
+                android:text="사진등록"
+                android:textColor="#FFFFFF"
+                android:textSize="55px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="닉네임" />
+
+            <EditText
+                android:id="@+id/c_nickname_re"
+                android:layout_width="253dp"
+                android:layout_height="55dp"
+                android:layout_margin="10px"
+                android:background="@drawable/edit_border"
+                android:ems="10"
+                android:hint="  닉네임"
+                android:lineSpacingExtra="14.5px"
+                android:padding="20px"
+                android:text="">
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="지역" />
+
+            <Spinner
+                android:id="@+id/c_region_re"
+                android:layout_width="254dp"
+                android:layout_height="55dp"
+                android:layout_margin="10px"
+                android:background="@drawable/spinner_border"
+                android:ems="10"
+                android:entries="@array/city"
+                android:lineSpacingExtra="14.5px"
+                android:spinnerMode="dialog" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="직업" />
+
+            <Spinner
+                android:id="@+id/c_job_re"
+                android:layout_width="254dp"
+                android:layout_height="55dp"
+                android:layout_margin="10px"
+                android:background="@drawable/spinner_border"
+                android:ems="10"
+                android:entries="@array/job"
+                android:lineSpacingExtra="14.5px"
+                android:spinnerMode="dialog" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="253dp"
+            android:layout_height="55dp"
+            android:layout_margin="10px"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="흡연" />
+
+
+            <RadioGroup
+                android:id="@+id/c_smoke_re"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_border"
+                android:ems="10"
+                android:gravity="center"
+                android:lineSpacingExtra="14.5px"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/c_smoke_ok_re"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="5"
+                    android:text="유" />
+
+                <RadioButton
+                    android:id="@+id/c_smoke_no_re"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="5"
+                    android:text="무" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="키" />
+
+        <EditText
+            android:inputType="number"
+            android:layout_width="253dp"
+            android:layout_height="55dp"
+            android:layout_margin="10px"
+            android:background="@drawable/edit_border"
+            android:ems="10"
+            android:lineSpacingExtra="14.5px"
+            android:id="@+id/c_height_re"
+            android:hint="  키(cm)"
+            android:padding="20px"
+            android:text=""/>
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

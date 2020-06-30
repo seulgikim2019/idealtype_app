@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 자신의 사진 프로필을 설정할 때 나오는 창..-->
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MyProfileActivity"
+    android:orientation="vertical"
+    android:weightSum="0.5">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/up_toolbar"
+        android:layout_width="match_parent"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ffffff"
+        android:layout_marginBottom="30dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/my_pic"
+            android:layout_width="700px"
+            android:layout_height="700px"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/my_id"
+            android:gravity="center"
+            android:layout_width="800px"
+            android:layout_height="80px"
+            android:text="아이디/성별(나이)"
+            android:textColor="#FFFFFF"
+            android:background="#FFDA70D6"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="173dp"
+                android:layout_height="158dp"
+                android:layout_weight="0.2"
+                app:cardBackgroundColor="#FFF0F5"
+                >
+
+                <ImageView
+                    android:id="@+id/p_card1"
+                    android:layout_gravity="center"
+                    android:layout_width="129dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/profile"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:text="프로필수정"
+                    android:layout_gravity="bottom|center"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                app:cardBackgroundColor="#FFF0F5"
+                android:layout_width="173dp"
+                android:layout_height="158dp"
+                android:layout_weight="0.2"
+                >
+
+                <ImageView
+                    android:id="@+id/p_card2"
+                    android:layout_width="129dp"
+                    android:layout_height="111dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:src="@drawable/love" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:text="나의이상형설정"
+                    android:layout_gravity="bottom|center"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                app:cardBackgroundColor="#FFF0F5"
+                android:layout_width="173dp"
+                android:layout_height="158dp"
+                android:layout_weight="0.2"
+                >
+
+                <ImageView
+                    android:id="@+id/p_card3"
+                    android:layout_width="129dp"
+                    android:layout_height="111dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:src="@drawable/list" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:text="대화신청목록"
+                    android:layout_gravity="bottom|center"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 이미지 사진 클릭했을 때 전체화면에 꽉차서 보이게 하기.-->
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+
+        <ImageView
+            android:scaleType="fitCenter"
+            android:id="@+id/img_full"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/profile" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

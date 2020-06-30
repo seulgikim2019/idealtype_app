@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/up_toolbar"
+        android:layout_width="match_parent"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ffffff"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <Switch
+            android:visibility="gone"
+            android:layout_marginRight="60dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/custom_list_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1순위이상형"
+            android:textOn="1순위"
+            android:textOff="2순위"/>
+
+
+    <Switch
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/custom_list_want"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="검색조건"
+        android:textOn="true"
+        android:textOff="false"/>
+
+
+    <Button
+        android:id="@+id/custom_list_want_btn"
+        android:padding="10dp"
+        android:layout_margin="45px"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="검색조건설정"
+        android:background="@drawable/edit_border"/>
+
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_gravity="center"
+        android:layout_width="1000px"
+        android:layout_height="match_parent"
+        android:id="@+id/custom_list_first"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

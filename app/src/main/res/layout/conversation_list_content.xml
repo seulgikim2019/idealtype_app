@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="5"
+    android:background="@drawable/border"
+    android:layout_margin="10dp"
+   >
+
+ <ImageView
+     android:layout_margin="5dp"
+     android:id="@+id/convers_pic"
+     android:layout_width="70dp"
+     android:layout_height="70dp"
+     android:src="@drawable/profile"
+     android:layout_weight="0.2"
+     android:layout_marginRight="12dp"/>
+
+
+
+    <LinearLayout
+        android:layout_weight="4.6"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:visibility="gone"
+            android:textSize="100px"
+            android:id="@+id/convers_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="룸넘버"/>
+        <TextView
+            android:visibility="gone"
+            android:textSize="100px"
+            android:id="@+id/convers_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이메일"/>
+    <TextView
+        android:layout_margin="5dp"
+        android:textSize="50px"
+        android:id="@+id/convers_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="닉네임"/>
+
+
+        <TextView
+            android:maxLines="1"
+            android:maxLength="10"
+            android:ellipsize="end"
+            android:layout_margin="5dp"
+            android:textSize="60px"
+            android:id="@+id/convers_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="대화내용"/>
+
+
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
